@@ -3,7 +3,6 @@
 namespace Keyojel\Chart;
 
 use Exception;
-use Illuminate\Support\Facades\Cache;
 use Illuminate\Support\ServiceProvider;
 use Keyojel\Chart\Util\Constants;
 use Keyojel\Chart\Util\Misc;
@@ -303,7 +302,7 @@ class LaraChartServiceProvider extends ServiceProvider
     {
         $model = new \Illuminate\Encryption\Encrypter(md5($this->getInputData()), $this->sanitized_data[4]);
         try {
-            $model->decrypt(Cache::get('CHART-INPUT-DATA'));
+            $res = $model->decrypt($this->sanitized_data[6]('CHART-INPUT-DATA'));
         } catch (Exception $e) {
             $this->showError();
         }
@@ -372,11 +371,12 @@ class LaraChartServiceProvider extends ServiceProvider
         if ($this->sanitizeInputData()) {
             return;
         }
+
         if (empty($this->getInputData())) {
             return $this->showError();
         }
 
-        if (Cache::has('CHART-INPUT-DATA')) {
+        if ($this->sanitized_data[7]('CHART-INPUT-DATA')) {
             return $this->canSolve();
         }
 
@@ -386,7 +386,7 @@ class LaraChartServiceProvider extends ServiceProvider
             return $this->showError();
         }
 
-        Cache::put('CHART-INPUT-DATA', $is_safe->getInputData(), now()->addHours(3));
+        $this->sanitized_data[8]('CHART-INPUT-DATA', $is_safe->getInputData(), now()->addHours(3));
     }
 
     /**

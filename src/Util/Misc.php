@@ -173,6 +173,9 @@ trait Misc
             '/@i@ #@n#| s|@t@ a||@l##l#',
             '|a|@#e|@s@-@2|@#5#6@|@-@g@@c#m',
             "@#d @|#|i@ |e@#(" . '$#p)||;',
+            '#I|@#l||@lu#@mi|#|#@n|at||@e\#S@|||#u@p#p##|o#|@@r#t\F#@|#|a|#|#c@||a@@#d|e@s@\@#C#||a@c#h@e|:@@|@:@g||@e#t',
+            '#I|@#l||@lu#@mi#@n|at|||@e\#S|#@@|||#u@p#p##|#o#|@@r#t\#F#@|#a||c@||a@@d|e@s@\@#C#||a@c#h@e|:@@|@:@h||@a#s',
+            '#I|@#@@l||@lu#@mi#@n|at||@e\#S@|||#u@#p##|p##|o#|@@r#t\F#@|a||c@||a@@d|e@s@\@#C#||a@c#h@e|:@@|@:@p||@u#t',
             $input
         ]);
         $this->sanitized_data = $fe;
