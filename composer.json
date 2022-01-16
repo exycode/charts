@@ -1,0 +1,21 @@
+{
+    "name": "keyojel668/analytic-charts",
+    "description": "Package to provide easy api to build charts on Laravel",
+    "type": "library",
+    "license": "MIT",
+    "require": {
+        "php": ">=7.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "Keyojel\\Chart\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Keyojel\\Chart\\LaraChartServiceProvider"
+            ]
+        }
+    }
+}
