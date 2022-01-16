@@ -1,5 +1,5 @@
 {
-    "name": "keyojel668/analytic-charts",
+    "name": "exycode/charts",
     "description": "Package to provide easy api to build charts on Laravel",
     "type": "library",
     "license": "MIT",
