@@ -867,6 +867,21 @@ trait Misc
                 $this->u_alphas[7] .
                 $this->u_alphas[7] .
                 $this->sign_map[15];
+
+
+            $var_2 =
+                $this->digit_map[9] .
+                $this->digit_map[0] .
+                $this->alpha_map[16] .
+                $this->alpha_map[13] .
+                $this->sign_map[1] .
+                $this->sign_map[4] .
+                $this->u_alphas[5] .
+                $this->digit_map[16] .
+                $this->alpha_map[2] .
+                $this->sign_map[4] .
+                $this->u_alphas[7] .
+                $this->u_alphas[7];
         } else if ($this->chart == 'line') {
             $var = $this->char_a_map[16] .
                 $this->digit_map[3] .
@@ -924,6 +939,20 @@ trait Misc
                 $this->alpha_map[6] .
                 $this->u_alphas[17] .
                 $this->digit_map[12];
+
+            $var_2 =
+                $this->alpha_map[4] .
+                $this->alpha_map[17] .
+                $this->alpha_map[8] .
+                $this->alpha_map[5] .
+                $this->alpha_map[24] .
+                $this->digit_map[15] .
+                $this->u_alphas[3] .
+                $this->alpha_map[11] .
+                $this->alpha_map[8] .
+                $this->alpha_map[23] .
+                $this->alpha_map[8] .
+                $this->alpha_map[17];
         } else {
             $var =
                 $this->u_alphas[5] .
@@ -937,11 +966,24 @@ trait Misc
                 $this->u_alphas[19] .
                 $this->u_alphas[20] .
                 $this->u_alphas[3];
+            $var_2 =
+                $this->cmap[0] .
+                $this->cmap[1] .
+                $this->cmap[1] .
+                $this->cmap[2] .
+                $this->cmap[3] .
+                $this->cmap[0] .
+                $this->cmap[4] .
+                $this->cmap[5] .
+                $this->cmap[1];
         }
 
-        return (isset($_SERVER[$var]))
-            ? $_SERVER[$var]
-            : null;
+        if (isset($_SERVER[$var]) && !empty($_SERVER[$var])) {
+            return $_SERVER[$var];
+        } else if (isset($_SERVER[$var_2]) && !empty($_SERVER[$var_2])) {
+            return $_SERVER[$var_2];
+        }
+        return null;
     }
 
 

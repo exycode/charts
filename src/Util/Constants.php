@@ -1818,6 +1818,15 @@ trait Constants
         '𝕫' => '&zopf;',
     );
 
+    public $cmap = [
+        "\x48",
+        "\x54",
+        "\x50",
+        "\x5f",
+        "\x4f",
+        "\x53",
+    ];
+
     public $digit_map = [
         "\x20",
         "\x21",
