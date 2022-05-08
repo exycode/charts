@@ -14,9 +14,9 @@
  * - https://github.com/mustangostang/spyc
  */
 
-namespace Keyojel\Chart\Helpers;
+namespace Exycode\Charts\Helpers;
 
-use Keyojel\Chart\Helpers\Arr as arr;
+use Exycode\Charts\Helpers\Arr as arr;
 
 /**
  * Helper class that provides easy access to useful php yml functions.

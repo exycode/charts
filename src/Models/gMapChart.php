@@ -1,6 +1,6 @@
 <?php
 
-namespace Keyojel\Chart\Models;
+namespace Exycode\Charts\Models;
 
 class gMapChart extends gChart
 {

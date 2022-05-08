@@ -2,7 +2,7 @@
 
 namespace IMSGlobal\LTI\ToolProvider\Service;
 
-use Keyojel\Chart\Helpers;
+use Exycode\Charts\Helpers;
 use IMSGlobal\LTI\HTTPMessage;
 
 /**

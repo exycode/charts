@@ -19,7 +19,7 @@
  * - https://github.com/JayBizzle/Crawler-Detect
  */
 
-namespace Keyojel\Chart\Helpers;
+namespace Exycode\Charts\Helpers;
 
 use Detection\MobileDetect;
 use Jaybizzle\CrawlerDetect\CrawlerDetect;

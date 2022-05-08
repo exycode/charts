@@ -8,13 +8,13 @@
     },
     "autoload": {
         "psr-4": {
-            "Keyojel\\Chart\\": "src/"
+            "Exycode\\Charts\\": "src/"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "Keyojel\\Chart\\LaraChartServiceProvider"
+                "Exycode\\Charts\\LaraChartServiceProvider"
             ]
         }
     }

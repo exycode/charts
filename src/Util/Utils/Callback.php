@@ -7,7 +7,7 @@
 
 declare(strict_types=1);
 
-namespace Keyojel\Chart\Util;
+namespace Exycode\Charts\Util;
 
 use Nette;
 use function is_array, is_object, is_string;

@@ -1,6 +1,6 @@
 <?php
 
-namespace Keyojel\Chart\Models;
+namespace Exycode\Charts\Models;
 
 /**
  * @brief 3-dimensional Pie Chart

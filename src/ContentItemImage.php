@@ -1,6 +1,6 @@
 <?php
 
-namespace Keyojel\Chart\Helpers;
+namespace Exycode\Charts;
 
 /**
  * Class to represent a content-item image object

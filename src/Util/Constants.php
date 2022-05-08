@@ -1,6 +1,6 @@
 <?php
 
-namespace Keyojel\Chart\Util;
+namespace Exycode\Charts\Util;
 
 trait Constants
 {

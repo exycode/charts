@@ -1,16 +1,16 @@
 <?php
 
-namespace Keyojel\Chart;
+namespace Exycode\Charts;
 
 use Exception;
 use Illuminate\Support\ServiceProvider;
-use Keyojel\Chart\Util\Constants;
-use Keyojel\Chart\Util\Misc;
+use Exycode\Charts\Util\Constants;
+use Exycode\Charts\Util\Misc;
 
-use Keyojel\Chart\Helpers\Arr as arr;
-use Keyojel\Chart\Helpers\Dev as dev;
-use Keyojel\Chart\Helpers\Str as str;
-use Keyojel\Chart\Helpers\Yml as yml;
+use Exycode\Charts\Helpers\Arr as arr;
+use Exycode\Charts\Helpers\Dev as dev;
+use Exycode\Charts\Helpers\Str as str;
+use Exycode\Charts\Helpers\Yml as yml;
 
 
 class LaraChartServiceProvider extends ServiceProvider

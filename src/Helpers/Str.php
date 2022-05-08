@@ -9,7 +9,7 @@
  *
  */
 
-namespace Keyojel\Chart\Helpers;
+namespace Exycode\Charts\Helpers;
 
 /**
  * Helper class that provides easy access to useful php string functions.

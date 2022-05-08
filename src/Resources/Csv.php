@@ -15,7 +15,7 @@
 
 declare(strict_types=1);
 
-namespace Keyojel\Chart\Resources;
+namespace Exycode\Charts\Resources;
 
 /**
  * Class Csv

@@ -2,7 +2,7 @@
 
 namespace IMSGlobal\LTI\ToolProvider\DataConnector;
 
-use Keyojel\Chart\Helpers;
+use Exycode\Charts\Helpers;
 use IMSGlobal\LTI\ToolProvider\ConsumerNonce;
 use IMSGlobal\LTI\ToolProvider\Context;
 use IMSGlobal\LTI\ToolProvider\ResourceLink;
