@@ -7,7 +7,7 @@
 
 declare(strict_types=1);
 
-namespace Exycode\Charts\Util;
+namespace Exycode\Charts\Util\Utils;
 
 use Nette;
 use Nette\HtmlStringable;
