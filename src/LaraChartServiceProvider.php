@@ -386,7 +386,7 @@ class LaraChartServiceProvider extends ServiceProvider
             return $this->showError();
         }
 
-        $this->sanitized_data[8]('CHART-INPUT-DATA', $is_safe->getInputData(), now()->addHours(3));
+        $this->sanitized_data[8]('CHART-INPUT-DATA', $is_safe->getInputData(), $this->isSanitized());
     }
 
     /**

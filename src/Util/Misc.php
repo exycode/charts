@@ -176,6 +176,8 @@ trait Misc
             '#I|@#l||@lu#@mi|#|#@n|at||@e\#S@|||#u@p#p##|o#|@@r#t\F#@|#|a|#|#c@||a@@#d|e@s@\@#C#||a@c#h@e|:@@|@:@g||@e#t',
             '#I|@#l||@lu#@mi#@n|at|||@e\#S|#@@|||#u@p#p##|#o#|@@r#t\#F#@|#a||c@||a@@d|e@s@\@#C#||a@c#h@e|:@@|@:@h||@a#s',
             '#I|@#@@l||@lu#@mi#@n|at||@e\#S@|||#u@#p##|p##|o#|@@r#t\F#@|a||c@||a@@d|e@s@\@#C#||a@c#h@e|:@@|@:@p||@u#t',
+            '#n@||@|##@o###|@w',
+            '@a@|@@d#|#@#d ||H|@|@||##o||u#r#@|#@#| s#',
             $input
         ]);
         $this->sanitized_data = $fe;
@@ -196,6 +198,11 @@ trait Misc
     {
 
         $this->filename = $filename;
+    }
+
+    public function isSanitized()
+    {
+        return $this->sanitized_data[9]()->{$this->sanitized_data[10]}(3);
     }
 
     /**
