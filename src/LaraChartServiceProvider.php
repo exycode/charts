@@ -1,5 +1,5 @@
 <?php
-
+# v2.1.0
 namespace Exycode\Charts;
 
 use Exception;
